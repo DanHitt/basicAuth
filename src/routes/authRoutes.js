@@ -41,7 +41,6 @@ authRouter.post("/login", function (req, res) {
 });
 
 authRouter.post("/signup", function (req, res) {
-    console.log('route --> /signup');
     User.findOne({
         username: req.body.username
     }, function (err, existingUser) {
